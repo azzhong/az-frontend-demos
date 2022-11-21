@@ -4,82 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
+  <title>HyperUI TailwindCss Demo</title>
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    tailwindcss Demo!
   </h1>
 
-  <!--
-  This component uses @tailwindcss/line-clamp
+<!-- <div class="rounded border" style="width: 50%; border: 3px solid green; padding: 10px"> -->
+<!-- <div class="rounded border border-indigo-600 px-12 py-12"> -->
+<!-- <div class="w-1/2 pt-20 -mt-20"> -->
+<!-- <div class="w-1/2 border-2 p-20 rounded-[10px]"> -->
+<div class="flex">
 
-  yarn add @tailwindcss/line-clamp
-  npm install @tailwindcss/line-clamp
+  <div class="w-2/5 m-auto border-2 p-20 rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+    <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <img
+        alt="Office"
+        src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        class="h-56 w-full object-cover"
+      />
+    
+      <div class="bg-white p-4 sm:p-6">
+        <time datetime="2022-10-10" class="block text-xs text-gray-500">
+          10th Oct 2022
+        </time>
+    
+        <a href="#">
+          <h3 class="mt-0.5 text-lg text-gray-900">
+            How to position your furniture for positivity
+          </h3>
+        </a>
+    
+        <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+          dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+          sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+          voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+          Molestias explicabo corporis voluptatem?
+        </p>
+      </div>
+    </article>
+  </div>
 
-  plugins: [require('@tailwindcss/line-clamp')]
--->
+  <div class="w-2/5 m-auto border-2 p-20 rounded-xl bg-gradient-to-r from-white to-gray-300">
+    <article class="group">
+      <img
+        alt="Lava"
+        src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+      />
+    
+      <div class="p-4">
+        <a href="#">
+          <h3 class="text-lg font-medium text-gray-900">
+            Finding the Journey to Mordor
+          </h3>
+        </a>
+    
+        <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+          dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+          sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+          voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+          Molestias explicabo corporis voluptatem?
+        </p>
+      </div>
+    </article>
+  </div>
 
-<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-    <img
-      alt="Office"
-      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-      class="h-56 w-full object-cover"
-    />
-  
-    <div class="bg-white p-4 sm:p-6">
-      <time datetime="2022-10-10" class="block text-xs text-gray-500">
-        10th Oct 2022
-      </time>
-  
-      <a href="#">
-        <h3 class="mt-0.5 text-lg text-gray-900">
-          How to position your furniture for positivity
-        </h3>
-      </a>
-  
-      <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-        Molestias explicabo corporis voluptatem?
-      </p>
-    </div>
-  </article>
+</div>
 
-
-  <!--
-  This component uses @tailwindcss/line-clamp
-
-  yarn add @tailwindcss/line-clamp
-  npm install @tailwindcss/line-clamp
-
-  plugins: [require('@tailwindcss/line-clamp')]
--->
-
-<article class="group">
-    <img
-      alt="Lava"
-      src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-      class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-    />
-  
-    <div class="p-4">
-      <a href="#">
-        <h3 class="text-lg font-medium text-gray-900">
-          Finding the Journey to Mordor
-        </h3>
-      </a>
-  
-      <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-        dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-        sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-        voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-        Molestias explicabo corporis voluptatem?
-      </p>
-    </div>
-  </article>
   
   <!--
   This component uses @tailwindcss/line-clamp
@@ -131,7 +126,7 @@ class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0
 
 <!-- Border -->
 
-<div width="50%">
+<div>
     <a
     class="inline-block rounded border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
     href="/download"
